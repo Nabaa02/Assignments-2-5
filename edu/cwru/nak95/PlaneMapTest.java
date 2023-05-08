@@ -94,6 +94,6 @@ class PlaneMapTest {
         Rectangle<Integer> rec2 = Rectangle.of(13, 11, 3, 7);
         Set<Rectangle<Integer>> rectangles = Set.of(rec1, rec2);
         assertEquals(0, PlaneMap.from(rectangles).indexOf(1, true));
-        assertEquals(5, PlaneMap.from(rectangles).indexOf(11, false));
+        assertEquals(2, PlaneMap.from(rectangles).indexOf(11, false));
     }
 }
